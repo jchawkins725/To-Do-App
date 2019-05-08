@@ -1,30 +1,30 @@
+$blue: #3b96fe;
+$lightgrey: #eff0f0;
+$grey: #d9d9d9;
+
 body {
   text-align: center;
-  background: #eff0f0;
+  background: $lightgrey;
   font-family: "Roboto", sans-serif;
   margin: 10px;
 }
-
 #root {
   width: 600px;
-  background: #d9d9d9;
+  background: $grey;
   margin: auto;
 }
-
 h1 {
-  background: #3b96fe;
+  background: $blue;
   color: white;
   padding: 10px 0px;
   margin: 0px;
 }
-
 #taskform {
   width: 60%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 #taskinput {
   width: 84%;
   border: none;
@@ -32,41 +32,36 @@ h1 {
   margin: 0;
   padding: 5px 0px 5px 3%;
 }
-
 #add {
   padding: 5px;
   border: none;
   font-size: 28px;
-  background: #3b96fe;
+  background: $blue;
   color: white;
   margin: 0;
   width: 13%;
 }
-
 #flexcontainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: white;
-  border-bottom: 5px solid #d9d9d9;
+  border-bottom: 5px solid $grey;
   font-size: 24px;
   padding: 10px;
   margin: 0px 4px;
 }
-
 #circle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: solid 2px #3b96fe;
+  border: solid 2px $blue;
   position: relative;
   cursor: pointer;
 }
-
 .circledone {
-  background: #3b96fe;
+  background: $blue;
 }
-
 .fa-check {
   left: 100px;
   font-size: 18px;
@@ -75,27 +70,22 @@ h1 {
   left: 3px;
   bottom: 2px;
 }
-
 #itemcontainer {
   width: 80%;
   padding: 0px 10px;
   word-wrap: break-word;
 }
-
 .done {
   color: grey;
 }
-
 .fa-times {
   cursor: pointer;
 }
-
 ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px 5px;
 }
-
 @media screen and (max-width: 600px) {
   * {
     margin-top: 0;
@@ -105,7 +95,6 @@ ul {
     margin: 0;
     padding: 0;
   }
-
   #root {
     width: 100%;
   }
@@ -115,5 +104,3 @@ ul {
     width: 80%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
