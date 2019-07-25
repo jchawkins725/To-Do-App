@@ -24,21 +24,12 @@ class List extends React.Component {
           <div>
             {this.props.items.map((x, index) => (
               <li id="flexcontainer" key={this.props.items.key}>
-                <div
-                  id="circle"
-                  className={
-                    this.props.items[index].done ? "circledone" : ""
-                  }
-                  onClick={() => this.props.complete(index)}
-                >
+                <div id="circle" className={this.props.items[index].done ? "circledone" : ""} onClick={() => this.props.complete(index)}>
                   {this.props.items[index].done && (
                     <i className="fas fa-check" />
                   )}
                 </div>
-                <div
-                  id="itemcontainer"
-                  className={this.props.items[index].done ? "done" : ""}
-                >
+                <div id="itemcontainer" className={this.props.items[index].done ? "done" : ""}>
                   {x.value}
                 </div>
                 <i
@@ -104,12 +95,11 @@ class TodoApp extends React.Component {
       items: items
     });
   }
- //handleDelete(i) { this.state.items.splice(i, 1);this.setState({ items: this.state.items});}
   handleDelete(i) {
     this.setState(prevState => ({
         items: prevState.items.filter(x => x != i )
     }));
-  }
+}
   handleComplete(i) {
     var items = this.state.items;
     var item = this.state.items[i];

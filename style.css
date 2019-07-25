@@ -43,6 +43,14 @@ h1 {
   width: 13%;
 }
 
+@keyframes fadein {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #flexcontainer {
   display: flex;
   align-items: center;
@@ -52,6 +60,7 @@ h1 {
   font-size: 24px;
   padding: 10px;
   margin: 0px 4px;
+  animation: fadein 0.4s ease-out both;
 }
 
 #circle {
